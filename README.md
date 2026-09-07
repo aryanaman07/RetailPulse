@@ -101,9 +101,9 @@ Built in Power BI with:
 ```
 RetailPulse/
 ├── data/
-│   └── customer_shopping_data.csv          # raw dataset
+│   └── customer_shopping_behavior.csv      # raw dataset
 ├── notebooks/
-│   └── data_cleaning_and_eda.ipynb         # Python cleaning, EDA, MySQL load
+│   └── Customer_Shopping_Behaviour_Analysis.ipynb  # Python cleaning, EDA, MySQL load
 ├── sql/
 │   └── Customer_Shopping_Behaviour_Analysis.sql   # 10 business-question queries
 ├── powerbi/
@@ -119,7 +119,7 @@ RetailPulse/
 
 ## ▶️ How to Reproduce
 
-1. Clone the repo and open `notebooks/data_cleaning_and_eda.ipynb`.
+1. Clone the repo and open `notebooks/Customer_Shopping_Behaviour_Analysis.ipynb`.
 2. Run the notebook — it cleans the raw CSV and loads it into a local MySQL database (update your MySQL credentials in the connection cell).
 3. Run the queries in `sql/Customer_Shopping_Behaviour_Analysis.sql` against the `customer_behavior` database to reproduce the business-question results.
 4. Open `powerbi/RetailPulse_Dashboard.pbix` in Power BI Desktop and point it at your MySQL instance (or the cleaned CSV) to refresh the dashboard.
